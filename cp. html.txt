@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Kavitha ❤️</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #ffe6f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+
+        #no {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Kavitha, <br> will you be my Valentine? 💗💞</h1>
+    <p>Choose wisely. (The "No" button is shy.)</p>
+    <button id="yes" onclick="yesClicked()">YES</button>
+    <button id="no" onmouseover="moveButton()">NO</button>
+</div>
+
+<script>
+    function yesClicked() {
+        alert("Yay! ❤️ Kavitha said YES! 💖");
+    }
+
+    function moveButton() {
+        const button = document.getElementById("no");
+        const x = Math.random() * 300 - 150;
+        const y = Math.random() * 300 - 150;
+        button.style.transform = `translate(${x}px, ${y}px)`;
+    }
+</script>
+
+</body>
+</html>
